@@ -65,6 +65,11 @@ abstract class AbstractPerson
         return sprintf("Hello %s %s", $this->name, $this->surname);
     }
     
+    public function getData ()
+    {
+        return $this->name . ' ' . $this->surname;
+    }
+    
     abstract public function getSalaryYear();
     
 }
